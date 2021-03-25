@@ -362,6 +362,45 @@ technologies*/
   margin-left: 30px;
 }
 
+/*Клиенты*/
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: -30px;
+  --grid-item: 6;
+}
+
+.client {
+  padding: 0;
+  border: none;
+  width: 120px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+}
+
+/*.button {
+  padding: 0;
+  border: none;
+  width: 120px;
+  height: 90px;
+}*/
+
+.button-icon {
+  width: 49px;
+  height: 44px;
+}
+
 /*подвал*/
 .footer {
   background: var(--dark-bg-color);
