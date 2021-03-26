@@ -437,7 +437,6 @@ technologies*/
 
 .clients {
   padding: 0;
-  border: none;
   width: 120px;
   height: 90px;
   border: 1px solid var(--additional-color);
@@ -446,12 +445,14 @@ technologies*/
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
 }
-.clients-link {
-  text-align: center;
+
+.clients-link .icons {
+  fill: var(--additional-color);
 }
 
-.clients .icons {
-  fill: var(--additional-color);
+.icons:hover,
+.icons:focus {
+  fill: var(--accent-color);
 }
 
 /*подвал*/
@@ -588,4 +589,10 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primery-text-color);
+}
+
+.progect-item:hover,
+.progect-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
