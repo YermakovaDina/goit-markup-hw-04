@@ -41,6 +41,7 @@ img {
   --second-test-color: #757575;
   --accent-color: #2196f3;
   --light-color: #ffffff;
+  --additional-color: #afb1b8;
   --text-size: 14px;
   --dark-bg-color: #2f303a;
   --light-bg-color: #f5f4fa;
@@ -109,6 +110,22 @@ body {
 
 .contact-nav {
   margin-left: auto;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+.contact-link .icon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--second-test-color);
+  margin-right: 10px;
+}
+
+.contact-link:hover .icon,
+.contact-link:focus .icon {
+  stroke: var(--accent-color);
 }
 
 .site-link,
@@ -338,10 +355,12 @@ technologies*/
 .team-info {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .team p {
-  text-align: center;
+  margin-bottom: 16px;
+
   letter-spacing: 0.03em;
   color: var(--second-test-color);
 }
@@ -349,7 +368,7 @@ technologies*/
 .team h3 {
   margin-bottom: 10px;
   font-weight: 500;
-  text-align: center;
+
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
@@ -362,14 +381,53 @@ technologies*/
   margin-left: 30px;
 }
 
+/* соцсети*/
+.social-icons {
+  display: inline-flex;
+  text-align: center;
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--additional-color);
+  background-color: var(--light-color);
+}
+
+.social-icons .icon {
+  width: 20px;
+  height: 20pt;
+  fill: currentColor;
+}
+
+.social-icons-link:hover .icon,
+.social-icons-link:focus .icon {
+  fill: var(--light-color);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+}
+
 /*Клиенты*/
 .our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.clients {
+.clients-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -377,28 +435,23 @@ technologies*/
   --grid-item: 6;
 }
 
-.client {
+.clients {
   padding: 0;
   border: none;
   width: 120px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--additional-color);
   box-sizing: border-box;
   border-radius: 4px;
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
 }
+.clients-link {
+  text-align: center;
+}
 
-/*.button {
-  padding: 0;
-  border: none;
-  width: 120px;
-  height: 90px;
-}*/
-
-.button-icon {
-  width: 49px;
-  height: 44px;
+.clients .icons {
+  fill: var(--additional-color);
 }
 
 /*подвал*/
