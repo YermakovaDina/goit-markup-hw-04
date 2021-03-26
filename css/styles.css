@@ -156,7 +156,7 @@ body {
 }
 
 .contact-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -419,6 +419,45 @@ technologies*/
 }
 
 /*Клиенты*/
+
+/*.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-item {
+  display: inline-flex;
+  text-align: center;
+  list-style: none;
+}
+.clients + .clients {
+  margin-left: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 90px;
+  border: 1px solid var(--additional-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: var(--additional-color);
+  background-color: var(--light-color);
+}
+
+.clients-link .icons {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.icons:hover,
+.icons:focus {
+  fill: var(--accent-color);
+}*/
+
 .our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -450,6 +489,11 @@ technologies*/
   fill: var(--additional-color);
 }
 
+.clients:hover,
+.clients:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .icons:hover,
 .icons:focus {
   fill: var(--accent-color);
@@ -461,6 +505,37 @@ technologies*/
   padding-top: 60px;
   padding-bottom: 60px;
 }
+/*.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  --grid-item: 4;
+
+  font-size: 16px;
+  letter-spacing: 0.03em;
+.team-item {
+  background: var(--light-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+}*/
+.secondary {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  --grid-item: 2;
+}
+
+.footer .navigation {
+  display: inline-block;
+  align-items: center;
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+}
+
+.footer .social {
+}
 
 .footer .contact-list {
   list-style: none;
@@ -470,10 +545,12 @@ technologies*/
 .contact {
   margin-top: 20px;
 }
+
 .contact-list {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .contact-list .info:hover,
 .contact-list .info:focus {
   color: var(--accent-color);
