@@ -171,7 +171,7 @@ body {
   color: var(--accent-color);
 }
 
-/*шапка*/
+/* Шапка */
 .hero {
   background: var(--dark-bg-color);
   text-align: center;
@@ -234,7 +234,8 @@ body {
   color: var(--light-color);
 }
 
-/*особенности*/
+/*Особенности*/
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -258,7 +259,28 @@ body {
   --grid-item: 4;
 }
 
-.list-features > h3 {
+.list-features {
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+}
+
+.features-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+  padding: 0;
+  width: 270px;
+  height: 120px;
+  border: none; 1px solid var(--additional-color);
+  background: var(--light-bg-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.list-features h3 {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -268,38 +290,13 @@ body {
   color: var(--primery-text-color);
 }
 
-.list-features > p {
+.list-features p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-test-color);
 }
 
-.list-features::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  border-radius: 4px;
-  background-color: var(--light-bg-color);
-}
-
-/* 
-attention
-punctuality
-planning
-technologies*/
-
-.list-features {
-  margin-left: 30px;
-  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-}
-
-/*чем мы занимаемся*/
+/* Чем мы занимаемся*/
 .section-style {
   margin-bottom: 50px;
   font-weight: 700;
@@ -418,52 +415,6 @@ technologies*/
   background-color: var(--accent-color);
 }
 
-/*Клиенты*/
-/*
-.our-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.clients-item {
-  display: inline-flex;
-  text-align: center;
-}
-
-.clients + .clients {
-  margin-left: 30px;
-}
-
-.clients-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 90px;
-  border: 1px solid var(--additional-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: var(--additional-color);
-  background-color: var(--light-color);
-}
-
-.clients-link .icons {
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  fill: currentColor;
-}
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.icons:hover,
-.icons:focus {
-  fill: var(--accent-color);
-}
-*/
-
 .our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -483,29 +434,27 @@ technologies*/
 
 .clients {
   position: relative;
-  padding: 0;
-  width: 120px;
-  height: 90px;
-  border: 1px solid var(--additional-color);
-  box-sizing: border-box;
-  border-radius: 4px;
+
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
 }
 
 .clients-link {
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--additional-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+
   color: var(--additional-color);
 }
 
 .clients-link .icons {
-  width: 100%;
-  height: 100%;
   fill: currentColor;
 }
 
@@ -514,8 +463,8 @@ technologies*/
   border: 1px solid var(--accent-color);
 }
 
-.icons:hover,
-.icons:focus {
+.clients:hover .icons,
+.clients:focus .icons {
   fill: var(--accent-color);
 }
 
@@ -547,7 +496,7 @@ technologies*/
   --grid-item: 2;
 }
 
-.footer .navigation {
+.navigation {
   display: inline-block;
   align-items: center;
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
