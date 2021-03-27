@@ -404,7 +404,7 @@ technologies*/
 
 .social-icons .icon {
   width: 20px;
-  height: 20pt;
+  height: 20px;
   fill: currentColor;
 }
 
@@ -419,19 +419,21 @@ technologies*/
 }
 
 /*Клиенты*/
-
-/*.our-clients {
+/*
+.our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .clients-item {
   display: inline-flex;
   text-align: center;
-  list-style: none;
 }
+
 .clients + .clients {
   margin-left: 30px;
 }
+
 .clients-link {
   display: flex;
   justify-content: center;
@@ -446,6 +448,9 @@ technologies*/
 }
 
 .clients-link .icons {
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   fill: currentColor;
 }
 .clients-link:hover,
@@ -456,7 +461,8 @@ technologies*/
 .icons:hover,
 .icons:focus {
   fill: var(--accent-color);
-}*/
+}
+*/
 
 .our-clients {
   padding-top: 94px;
@@ -467,6 +473,7 @@ technologies*/
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 0;
   margin: 0;
   list-style: none;
@@ -475,6 +482,7 @@ technologies*/
 }
 
 .clients {
+  position: relative;
   padding: 0;
   width: 120px;
   height: 90px;
@@ -485,8 +493,20 @@ technologies*/
   margin-left: 30px;
 }
 
+.clients-link {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: var(--additional-color);
+}
+
 .clients-link .icons {
-  fill: var(--additional-color);
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 
 .clients:hover,
@@ -499,7 +519,7 @@ technologies*/
   fill: var(--accent-color);
 }
 
-/*подвал*/
+/* Подвал */
 .footer {
   background: var(--dark-bg-color);
   padding-top: 60px;
