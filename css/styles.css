@@ -273,11 +273,10 @@ body {
   padding: 0;
   width: 270px;
   height: 120px;
-  border: none; 1px solid var(--additional-color);
+  border: none;
   background: var(--light-bg-color);
   border-radius: 4px;
   box-sizing: border-box;
-
 }
 
 .list-features h3 {
@@ -297,6 +296,7 @@ body {
 }
 
 /* Чем мы занимаемся*/
+
 .section-style {
   margin-bottom: 50px;
   font-weight: 700;
@@ -328,7 +328,8 @@ body {
   margin-bottom: 50px;
 }
 
-/*наша команда */
+/* Наша команда */
+
 .our-team {
   background: var(--light-bg-color);
   padding-top: 94px;
@@ -378,7 +379,7 @@ body {
   margin-left: 30px;
 }
 
-/* соцсети*/
+/*соцсети*/
 .social-icons {
   display: inline-flex;
   text-align: center;
@@ -468,37 +469,30 @@ body {
   fill: var(--accent-color);
 }
 
-/* Подвал */
+/* Подвал 
+установить секцию как Наша команда, заполнить по принципу*/
+
 .footer {
   background: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/*.team {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  --grid-item: 4;
 
-  font-size: 16px;
-  letter-spacing: 0.03em;
-.team-item {
-  background: var(--light-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-  margin-left: 30px;
-}*/
-.secondary {
+.footer .secondary {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  --grid-item: 2;
+}
+
+.secondary h2 {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
 }
 
 .navigation {
-  display: inline-block;
-  align-items: center;
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
 }
@@ -576,6 +570,7 @@ button {
   border-radius: 4px;
   background: var(--accent-color);
   color: var(--light-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter {
@@ -603,6 +598,16 @@ button {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
 }
 
+.progect-item .page {
+  display: block;
+}
+
+.page:hover,
+.page:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .page img {
   display: block;
   max-width: 100%;
@@ -614,7 +619,7 @@ button {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  display: block;
+
   border-top: 0px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -635,10 +640,4 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primery-text-color);
-}
-
-.progect-item:hover,
-.progect-item:focus {
-  cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
