@@ -68,6 +68,44 @@ body {
   margin: 0 auto;
 }
 
+/*соцсети*/
+
+.social-icons {
+  display: inline-flex;
+  text-align: center;
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--additional-color);
+  background-color: var(--light-color);
+}
+
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-icons-link:hover .icon,
+.social-icons-link:focus .icon {
+  fill: var(--light-color);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -379,42 +417,7 @@ body {
   margin-left: 30px;
 }
 
-/*соцсети*/
-.social-icons {
-  display: inline-flex;
-  text-align: center;
-}
-
-.social-icons-item + .social-icons-item {
-  margin-left: 10px;
-}
-
-.social-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--additional-color);
-  background-color: var(--light-color);
-}
-
-.social-icons .icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.social-icons-link:hover .icon,
-.social-icons-link:focus .icon {
-  fill: var(--light-color);
-}
-
-.social-icons-link:hover,
-.social-icons-link:focus {
-  background-color: var(--accent-color);
-}
+/* Наши клиенты*/
 
 .our-clients {
   padding-top: 94px;
@@ -483,9 +486,11 @@ body {
 }
 
 .secondary h2 {
+  padding-top: 12px;
   margin-bottom: 20px;
 
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -497,7 +502,14 @@ body {
   margin-left: 30px;
 }
 
-.footer .social {
+.second .social-icons-link {
+  color: var(--light-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.second .social-icons-link:hover,
+.second .social-icons-link:focus {
+  background-color: var(--accent-color);
 }
 
 .footer .contact-list {
